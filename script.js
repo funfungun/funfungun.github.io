@@ -2,7 +2,8 @@
 // 텍스트 작성과 삭제 즉시 실행 함수
 (function(){
   const spanEl = document.querySelector("main h2 span");
-  const txtArr = ['Web Publisher', 'Front-End Developer', 'Web UI Designer', 'UX Designer', 'Back-End Developer'];
+  //const txtArr = ['Web Publisher', 'Front-End Developer', 'Web UI Designer', 'UX Designer', 'Back-End Developer'];
+  const txtArr = ['Full-Stack Developer'];
   let index = 0;
   let currentTxt = txtArr[index].split("");
   function writeTxt(){
@@ -14,7 +15,7 @@
       setTimeout(deleteTxt, 3000);
     }
   }
-  function deleteTxt(){
+  /*function deleteTxt(){
     currentTxt.pop();
     spanEl.textContent = currentTxt.join("");
     if(currentTxt.length !== 0){
@@ -24,7 +25,7 @@
       currentTxt = txtArr[index].split("");
       writeTxt();
     }
-  }
+  }*/
   writeTxt();
 })();
 /* end text_iife.js */
